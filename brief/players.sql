@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Dec 31, 2024 at 03:32 PM
+-- Generation Time: Jan 02, 2025 at 12:08 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.0.28
 
@@ -45,9 +45,13 @@ CREATE TABLE `players` (
 --
 
 INSERT INTO `players` (`player_id`, `name`, `position`, `rating`, `pace`, `shooting`, `passing`, `dribbling`, `defending`, `physical`) VALUES
-(1, 'ali', 'gk', 98, 10, 99, 99, 76, 98, 78),
 (2, 'ayman', 'AMF', 98, 98, 99, 99, 76, 98, 78),
-(3, 'messi', 'AMF', 98, 98, 99, 99, 76, 98, 78);
+(3, 'messi', 'AMF', 98, 98, 99, 99, 76, 98, 78),
+(4, 'kudo', 'cb', 11, NULL, NULL, NULL, NULL, NULL, NULL),
+(5, 'kudo', 'cb', 11, NULL, NULL, NULL, NULL, NULL, NULL),
+(7, 'kudo', 'cb', 11, NULL, NULL, NULL, NULL, NULL, NULL),
+(8, 'kudo', 'cb', 11, NULL, NULL, NULL, NULL, NULL, NULL),
+(9, 'kudo', 'cb', 11, NULL, NULL, NULL, NULL, NULL, NULL);
 
 --
 -- Indexes for dumped tables
@@ -58,6 +62,16 @@ INSERT INTO `players` (`player_id`, `name`, `position`, `rating`, `pace`, `shoot
 --
 ALTER TABLE `players`
   ADD PRIMARY KEY (`player_id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `players`
+--
+ALTER TABLE `players`
+  MODIFY `player_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
